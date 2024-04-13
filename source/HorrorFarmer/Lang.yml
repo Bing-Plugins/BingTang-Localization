@@ -1,0 +1,306 @@
+join-game: "&f%player% &e加入了游戏 (&b%nowPlayer%&e/&b%maxPlayer%&e)"
+leave-game: "&f%player% &e离开了游戏"
+
+countdown-msg: "&e游戏将在 %time% &e秒后开始"
+countdown-reset: "&c玩家数量不足, 倒计时已重置"
+round-time-change: "&6回合时间缩短到 &c&l%time% 秒"
+
+game-info: |-
+  &a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+  &f
+  &f&l            恐怖种田人
+  &f
+  &f   暂无介绍, 加油
+  &f
+  &a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+team-spec-color: "&7"
+team-spec-name: "观战"
+
+team-red-color: "&c"
+team-red-name: "红队"
+
+team-yellow-color: "&e"
+team-yellow-name: "黄队"
+
+team-purple-color: "&d"
+team-purple-name: "紫队"
+
+team-cyan-color: "&b"
+team-cyan-name: "蓝队"
+
+team-force-radius-teleport: "&c你似乎超过了团队区域, 已经将你传送回出生点"
+
+poisoned-cant-eat: "&c你中毒了, 无法吃东西"
+
+player-buy-golden-hoe-tip: "&f%team-color%&l%team-name%%team-color% %player-name% &r已经购买了&6金锄头&r！"
+
+money-add: "&a你获得了 &e%money% &a积分"
+
+bossbar-day: "&f第 %day% 天  距离白天还有 %time% 秒"
+bossbar-night: "&f第 %day% 天  距离夜晚还有 %time% 秒"
+
+actionbar-day: "&f天亮了, 作物回归了正常的生长速度"
+actionbar-night: "&f夜幕降临, 作物的生长也减慢了"
+
+random-event-title-rain: "下雨"
+random-event-subtitle-rain: "所有作物生长周期降低 50%"
+random-event-title-thunderstorm: "雷暴"
+random-event-subtitle-thunderstorm: "所有作物生长周期降低 50%，恐怖雷暴将会随机摧毁某人的田"
+random-event-title-harvest-festival: "丰收节"
+random-event-subtitle-harvest-festival: "所有作物产量提升50%"
+random-event-title-village-discount: "商人打折"
+random-event-subtitle-village-discount: "商人打折50%"
+random-event-title-exchange: "恐怖换田日"
+random-event-subtitle-exchange: "随机交换玩家们的田：这是哪里？我是谁？"
+random-event-title-iron-golem: "来鬼啦！快跑啊！"
+random-event-subtitle-iron-golem: "恐怖铁傀儡：接下来我将揍死你们其中一个人。"
+
+gui-kit-title: "职业"
+gui-kit-info-title: "职业信息"
+gui-kit-info-button: "查看职业信息"
+
+gui-kit-selector-item-name: "&a职业选择器 &7(右键点击)"
+gui-kit-selector-item-description: |-
+  &7右键单击选择你的职业
+
+gui-kit-select-success: "&a你成功选择了 &e%kit% &a职业."
+gui-kit-select-not-have: "&c你尚未拥有此职业"
+
+gui-kit-already-select: "&a已选择"
+gui-kit-not-select: "&e点击选择"
+gui-kit-not-have: "&c未拥有"
+
+gui-kit-item-lore: |-
+  %description%
+  
+  %select%
+
+gui-kit-floodgate-button: |-
+  %name%
+  %select%
+
+kit-default-name: "种田人默认职业"
+kit-default-description: |-
+  &f 开局获得5个小麦种子
+
+kit-angler-name: "钓鱼佬"
+kit-angler-description: |-
+  &f 开局获得一把钓鱼竿 
+  &f 自带耐久I
+
+kit-potato-name: "土豆人"
+kit-potato-description: |-
+  &f 开局获得一个土豆
+  &f 并且可以吃土豆回复半颗心
+
+kit-alchemy-name: "炼金学"
+kit-alchemy-description: |-
+  &f 开局获得2个小麦种子
+  &f 但是每过半天 随机给予四个炼金材料
+
+kit-archaeologist-name: "考古学家"
+kit-archaeologist-description: |-
+  &f 开局获得3个小麦种子
+  &f 但是每过半天 会获得一根骨头
+
+kit-chosen-one-name: "天选之人"
+kit-chosen-one-description: |-
+  &f 开局获得一包随机种子
+  &f 从小麦 胡萝卜 土豆 甜菜根
+  &f 随机获得其中一个
+
+kit-poison-maker-name: "歹毒人"
+kit-poison-maker-description: |-
+  &f 开局获得2个小麦种子，2个毒马铃薯
+  &f 并且免疫中毒 但是受到的
+  &f 火烧药水和瞬伤药水将翻倍
+
+kit-farming-king-name: "种田王"
+kit-farming-king-description: |-
+  &f 开局获得25个小麦种子
+  &f 但是最大生命值降低8点
+
+kit-sword-in-the-stone-name: "石中剑"
+kit-sword-in-the-stone-description: |-
+  &f 开局获得一把耐久25点的石剑攻击力8点
+
+kit-witch-name: "女巫"
+kit-witch-description: |-
+  &f 开局获得一口炼药锅，一个空瓶子
+  &f 和一个小麦种子
+
+gui-shop-title: "商店"
+gui-shop-info-title: "物品信息"
+gui-shop-info-button: "查看物品信息"
+
+gui-shop-buy-success: "&a你成功购买了 &e%item%&a."
+gui-shop-not-enough-resource: "&c你没有足够的资源购买此物品"
+
+gui-shop-item-lore: |-
+  %description%
+  
+  %price%
+  %item%
+  
+  %buy%
+
+gui-shop-floodgate-button: |-
+  %price%
+
+gui-shop-price-enough: "&f价格: &a%price% 积分"
+gui-shop-price-not-enough: "&f价格: &c%price% 积分"
+gui-shop-item: "&f所需物品:"
+gui-shop-item-list-enough: "&a %item%*%number%"
+gui-shop-item-list-not-enough: "&c %item%*%number%"
+gui-shop-buy-enough: "&e点击购买"
+gui-shop-buy-not-enough: "&c资源不足无法购买"
+
+item-wooden_hoe-description: |-
+  &f 100% 无额外作物
+
+item-stone_hoe-description: |-
+  &f 85% 额外收获一个作物
+  &f 15% 额外收获两个作物
+
+item-iron_hoe-description: |-
+  &f 70% 额外收获一个作物
+  &f 30% 额外收获两个作物
+
+item-golden_hoe-description: |-
+  &f 20% 额外收获一个作物
+  &f 20% 额外收获两个作物
+  &f 60% 额外收获三个作物
+
+item-wheat-name: "小麦"
+item-golden_carrot-name: "金胡萝卜"
+item-gold_nugget-name: "金蛋"
+item-golden_apple-name: "金苹果"
+
+item-wheat_seeds-name: "小麦种子"
+item-potato-name: "马铃薯"
+item-carrot-name: "胡萝卜"
+item-beetroot_seeds-name: "甜菜种子"
+item-pumpkin-name: "南瓜"
+item-melon-name: "西瓜"
+item-cauldron-name: "炼药锅"
+item-glass_bottle-name: "玻璃瓶"
+item-composter-name: "堆肥桶"
+item-bone_meal-name: "骨粉"
+item-fishing_rod-name: "钓鱼竿"
+item-wooden_hoe-name: "木锄头"
+item-stone_hoe-name: "石锄头"
+item-iron_hoe-name: "铁锄头"
+item-golden_hoe-name: "金锄头"
+
+item-DOG_EGG_HAND-name: "狗"
+item-KILLER_CHICKEN_EGG-name: "鸡"
+item-KILLER_CAT_EGG-name: "猫"
+item-KILLER_PIG_EGG-name: "猪"
+item-KILLER_IRON_GOLEM_EGG-name: "铁傀儡"
+
+item-DOG_EGG_HAND-description: |-
+  &f 喂骨头80%的概率出动 咬人
+  &f 喂鱼25%的概率出动 咬人
+
+item-KILLER_CHICKEN_EGG-description: |-
+  &f 95%出鸡蛋 5%出金蛋
+  &f 提升小麦作物的经济能力
+  &f 喂食&6黄金小麦&f一定会出金蛋
+
+item-KILLER_CAT_EGG-description: |-
+  &f 喂鱼 喂到一定程度则会为了主人出击
+  &f 攻击最近的其他小动物！
+
+item-KILLER_PIG_EGG-description: |-
+  &f 喂胡萝卜出红色蘑菇
+  &f 喂土豆出白色蘑菇
+
+craft-item-killer-pumpkin-name: "&f恐怖南瓜人"
+craft-item-dog-name: "&f狗"
+craft-item-killer-potion-name: "&f恐怖肥料"
+craft-item-wheat-name: "&f很有用的东西！真的！"
+
+fail-msg: "&4✖ &f%team-color%&l%team-name%%team-color% %player-name% &7被淘汰出局"
+
+fail-title: "&c&l你被淘汰了"
+fail-subtitle: "&f你现在是一名观察者"
+
+chat-format: "&f%team-color%&l%team-name%%team-color% %player-name%&f: %message%"
+
+winner-delimiter: " & "
+winner-title: "%winner%"
+winner-subtitle: "&7是这局的赢家"
+
+game-end-info: |-
+  &a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+  &f
+  &f&l            恐怖种田人
+  &f
+  &f                       %winStatus%
+  &f
+  &a&l                   赢家
+  &f          %winner%
+  &f
+  &a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+
+game-win: "&a你赢了"
+game-fail: "&c你输了"
+
+# Admin
+
+main-get-help: "查看帮助使用 /HorrorFarmer help"
+main-command-help: |-
+  &e/HorrorFarmer help &7- &f查看帮助
+  &e/HorrorFarmer reload &7- &f重载配置
+success-reload: "&a成功重载配置文件"
+
+# ScoreBoard
+
+scoreboard-waiting-title: "&e&l恐怖种田人"
+scoreboard-waiting-lines: |-
+  &7%localtime%
+  
+  &f玩家: &a%nowPlayer%/%maxPlayer%
+  
+  &f等待中...
+  
+  &eplay.yistars.net
+
+scoreboard-starting-title: "&e&l恐怖种田人"
+scoreboard-starting-lines: |-
+  &7%localtime%
+  
+  &f玩家: &a%nowPlayer%/%maxPlayer%
+
+  &f即将开始: &a%time% 秒
+
+  &eplay.yistars.net
+
+scoreboard-survive-have: "&a%number%"
+scoreboard-survive-not-have: "&c✖"
+
+scoreboard-money-unavailable: "&c不可用"
+
+scoreboard-team: "%teamColor%❚ &f%teamName%: &a%teamPlayer%"
+
+scoreboard-playing-title: "&e&l恐怖种田人"
+scoreboard-playing-lines: |-
+  &7%localtime%
+
+  &f%redTeam%
+  &f%yellowTeam%
+  &f%purpleTeam%
+  &f%cyanTeam%
+  
+  &f积分: &a%money%
+
+  &eplay.yistars.net
+
+scoreboard-ending-title: "&e&l恐怖种田人"
+scoreboard-ending-lines: |-
+  &7%localtime%
+  
+  &f赢家: %winner%
+
+  &eplay.yistars.net
