@@ -4,9 +4,9 @@
   "files": [
     {
       "namePattern": "parentDirectory",
-      "format": "json",
-      "source": "source/*.json",
-      "target": "target/%slug%/%document_path%.json"
+      "format": "yaml",
+      "source": "source/**/*.yml",
+      "target": "target/**/%slug%/%document_path%.yml"
     }
   ]
 }
