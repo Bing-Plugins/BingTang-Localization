@@ -17,7 +17,6 @@ jobs:
         env:
           ACCENT_API_KEY: ${{ secrets.ACCENT_API_KEY }}
           ACCENT_API_URL: ${{ vars.ACCENT_API_URL }}
-          ACCENT_PROJECT: ${{ vars.ACCENT_PROJECT }}
       - uses: peter-evans/create-pull-request@v4
         with:
           add-paths: "*.po"
