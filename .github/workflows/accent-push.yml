@@ -10,10 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Replace secret in accent.json
-        run: sed -i 's/%ACCENT_APIKEY%/${{ secrets.ACCENT_APIKET }}/g' accent.json
       - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install -g accent-cli
       - run: accent sync --add-translations --merge-type=passive
+        env:
+          ACCENT_API_KEY: ${{ secrets.ACCENT_API_KEY }}
+          ACCENT_API_URL: ${{ vars.ACCENT_API_URL }}
+          ACCENT_PROJECT: ${{ vars.ACCENT_PROJECT }}
