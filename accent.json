@@ -1,5 +1,5 @@
 {
-  "apiUrl": "https://translate.yistars.net/",
+  "apiUrl": "https://translate.yistars.net",
   "apiKey": "%ACCENT_APIKEY%",
   "files": [
     {
