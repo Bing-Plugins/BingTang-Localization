@@ -1,0 +1,12 @@
+{
+  "apiUrl": "https://translate.yistars.net/",
+  "apiKey": "${{ secrets.APIKEY }}",
+  "files": [
+    {
+      "namePattern": "parentDirectory",
+      "format": "yaml",
+      "source": "source/**/*.yml",
+      "target": "target/**/%slug%/%document_path%.json"
+    }
+  ]
+}
