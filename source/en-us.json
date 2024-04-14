@@ -1,0 +1,1280 @@
+{
+  "addon": {
+    "channel": {
+      "handle_in": {
+        "create_collaborator": "{user} invited {collaboratorEmail} on the project",
+        "create_comment": "{user} commented on {translationKey}: {commentText}",
+        "sync": "{user} synced a file: {documentPath}"
+      }
+    }
+  },
+  "components": {
+    "improve_prompt": {
+      "title": "Improve text",
+      "run": "Run instruction",
+      "accept": "Accept & close"
+    },
+    "jipt": {
+      "back_to_translations": {
+        "back": "Back"
+      },
+      "translations_filtered_title": {
+        "title_count": "{count, plural, =1 {This element contains 1 string} other {This element contains # strings}}"
+      }
+    },
+    "machine_translations_translate_upload_form": {
+      "select_target": "Select different target language to translate the file",
+      "translate": "Translate",
+      "new_file": "New file",
+      "step_1": "Select or drop a file here to translate it.",
+      "step_1_text": "You can then export the file to add translations in your selected language",
+      "step_2": "Choose the correct format and submit to translate <code>{name}</code> in the chosen target language"
+    },
+    "documents_add_button": {
+      "link": "Synchronize a new file"
+    },
+    "documents_machine_translations_button": {
+      "link": "Translate with machine translations"
+    },
+    "versions_add_button": {
+      "link": "Create new version"
+    },
+    "revision_selector": {
+      "languages_count": "{count, plural, =1 {1 other language} other {# other languages}}",
+      "master": "main"
+    },
+    "translation_comments_subscriptions": {
+      "title": "Notify on new messages"
+    },
+    "login_header": {
+      "text": "Login",
+      "subtext": "Only your email address, full name and profile picture will be used for your Accent profile.",
+      "subtitle": "Your reliable, <em>simple</em>, developer-oriented translation tool",
+      "footer_open_source_link": "100% open-source",
+      "footer_mirego_link": "Mirego",
+      "footer": ", made with ♥ by"
+    },
+    "login_forms": {
+      "auth0": "Login with Auth0 →",
+      "github": "Login with GitHub →",
+      "gitlab": "Login with GitLab →",
+      "google": "Login with Google →",
+      "slack": "Login with Slack →",
+      "discord": "Login with Discord →",
+      "microsoft": "Login with Microsoft →",
+      "oidc": "Login with OpenID Connect →",
+      "dummy": "Enter an email and login →"
+    },
+    "dummy_login_form": {
+      "title": "Fake authentication",
+      "warning": "Looks like you don’t have a valid Google API setup :(",
+      "subtitle": "You can use any email to be automatically logged in the platform. Be sure that the API you’re connecting to is in dev mode and not built for production. <strong>The fake login setup is disabled in production.</strong>",
+      "login_button": "Login with any email"
+    },
+    "activity_item": {
+      "batch_operations_hidden_count": "and {count} more",
+      "rollbacked": "Rollbacked",
+      "details": "Details",
+      "empty_text": "Empty text"
+    },
+    "application_footer": {
+      "accent_bot": "Accent CLI",
+      "text": "Made with computers by",
+      "language_select": {
+        "english": "En",
+        "french": "Fr"
+      }
+    },
+    "collaborator_create_form": {
+      "create_button": "Add collaborator",
+      "cancel_button": "Cancel",
+      "email_placeholder": "Add a collaborator by email…"
+    },
+    "commit_file": {
+      "cancel_button": "Cancel",
+      "file_input_button": "Choose a file",
+      "commit_error": "An error occurred while uploading the file",
+      "document_format": "Format of the file",
+      "document_path": "Name of the file",
+      "version_tag": "Version",
+      "no_version_label": "No version",
+      "language": "Language",
+      "commit_type": "Mode",
+      "file_source": "Document path",
+      "merge_button": "Add translations",
+      "pattern_help": "You need to specify the pattern of the files included in the zip that will be imported, \"eg\": **/*.strings",
+      "new_document_warning": "The changes will create a new file.",
+      "existing_document_warning": "The changes will be applied to the already existing file.",
+      "peek_button": "Preview sync",
+      "peek_error": "An error occurred while previewing the file",
+      "peek_help": "This action will have no effects on your project.",
+      "sync_button": "Sync",
+      "upload_help": "After choosing a file you will be able to preview the changes on your project",
+      "upload_title": "Select a file",
+      "merge_options": "Options",
+      "correct_on_merge": "Mark strings as reviewed",
+      "instructions": {
+        "sync": {
+          "title": "Sync",
+          "text": "Update the list of strings in Accent, removing ones missing in the file and adding new ones.<em>The sync is always done in the main language.</em>New strings and removed strings changes will be reflected in all translated languages."
+        },
+        "merge": {
+          "title": "Add translations",
+          "text": "Merge translations present in the uploaded file with strings existing in Accent. The add translations is usually done when you translate the string directly in your project to save some times for reviewers."
+        },
+        "mistakes": {
+          "title": "Common mistakes",
+          "item_1": "Export Accent files locally before a sync. This will force you to resolve conflicts locally and potentially override reviewed texts or adding removed strings.",
+          "item_2": "Sync a translated language (not your main language). This will effectively generates conflicts for all your keys, changing the text of the main language for your translated language.",
+          "item_3": "Sync one file per language. The purpose of the \"file\" in Accent is to be translated in X languages. Sync your main language and let the translated languages be translated in the UI."
+        }
+      }
+    },
+    "conflict_item": {
+      "correct_error_text": "Failed to correct the conflict. Try again later.",
+      "conflicted_label": "in review",
+      "in_review_tooltip": "View in review",
+      "translate_tooltip": "Translate from this text",
+      "translation_tooltip": "View string details",
+      "uncorrect_error_text": "Failed to uncorrect the conflict. Try again later."
+    },
+    "conflicts_actions": {
+      "reload_button": "Reload"
+    },
+    "conflicts_filters": {
+      "advanced_filters_button": "Advanced filters",
+      "total_entries_count": "{count, plural, =0 {No strings to review} =1 {1 string to review} other {# strings to review}}",
+      "reference_default_option_text": "No reference language",
+      "version_default_option_text": "Latest version",
+      "document_default_option_text": "All documents",
+      "input_placeholder_text": "Search for a string",
+      "advanced_filters_title": "Advanced filters",
+      "advanced_filters": {
+        "empty": "Text is empty (\"\" or null value)",
+        "not_empty": "Text is not empty",
+        "added_last_sync": "Strings added last sync",
+        "commented_on": "Strings with comments",
+        "conflicted": "To review",
+        "translated": "To translate"
+      }
+    },
+    "conflicts_list": {
+      "translations_version_notice": "You are viewing the strings to be reviewed in the version",
+      "correct_all_button": "Mark all strings as reviewed for this language",
+      "no_translations": "No strings found for: {query}",
+      "all_reviewed_title": "All reviewed",
+      "all_reviewed_subtitle": "All strings have been marked as reviewed"
+    },
+    "dashboard_master_revision": {
+      "features": {
+        "documents": {
+          "text": "Manage your files, view a preview of the exported content, and finally, save your file on your machine.",
+          "title": "Files"
+        },
+        "export": {
+          "text": "Save all strings in a file to include it in your project.",
+          "title": "Export"
+        },
+        "review": {
+          "text": "Mark strings as reviewed, correct them while seeing a text diff of the previous content. You can even see the text of another language for the matching string.",
+          "title": "Review"
+        },
+        "sync": {
+          "text": "Upload your localization files to add, remove and update strings.",
+          "title": "Sync"
+        },
+        "translations": {
+          "text": "Search and filter your strings to quickly navigate in your project and see which strings are in review, commented on or recently updated.",
+          "title": "All strings"
+        }
+      },
+      "keys": "strings",
+      "last_synced_at_label": "Last sync:",
+      "master_language_label": "Main language is:",
+      "never_synced": "Sync the project for the first time",
+      "reviewed": "reviewed"
+    },
+    "dashboard_navigation": {
+      "collaborators_link_title": "Collaborators",
+      "edit_link_title": "Edit",
+      "overview_link_title": "Overview"
+    },
+    "dashboard_revisions": {
+      "last_synced_at_label": "Last sync:",
+      "manage_languages_link_title": "Manage languages",
+      "new_language_link_title": "New language",
+      "new_language_link_text": "With another language, you can keep track of translation based on the main language.",
+      "view_more_activities": "View more activities →",
+      "title": "Dashboard",
+      "master": "Main language",
+      "slaves": "Translations",
+      "sync": "Sync",
+      "strings": "strings",
+      "all_reviewed": "All reviewed!",
+      "reviewed": "reviewed",
+      "activities_title": "Latest activities",
+      "item": {
+        "rtl_badge": "RTL",
+        "rtl": "Right to left text",
+        "correct_all_button": "Mark all strings as reviewed",
+        "uncorrect_all_button": "Put all strings back in review",
+        "stats_translated": "translated",
+        "stats_to_review": "to review"
+      }
+    },
+    "date_tag": {
+      "formatted_date_time_format": "yyyy-MM-dd'T'HH:mm:ss",
+      "humanized_date_title_format": "EEEE, MMMM do yyyy, H:mm a"
+    },
+    "versions_list": {
+      "empty_text": "Versionning enables you to review/export/sync translations independantly from your main project. This means that supporting previous versions of your app will be as easy as adding new features!",
+      "export": "Export",
+      "update": "Edit"
+    },
+    "documents_list": {
+      "empty_text": "Files are the actual listing of your project’s main language files. Add them here or from the CLI and keep them in sync with your project.",
+      "export_all": "Export all",
+      "show_deleted": "Show deleted",
+      "hide_deleted": "Hide deleted",
+      "format": "Format",
+      "review": "In review",
+      "total": "Total",
+      "sync": "Sync",
+      "merge": "Add translations",
+      "machine_translations": "Translate",
+      "export": "Export",
+      "export_jipt": "Just in place translations",
+      "no_strings": "No strings",
+      "total_strings_count": "{count, plural, =0 {No strings} =1 {1 string} other {# strings}}",
+      "language_strings_count": "{count, plural, =0 {} =1 {1 string per language} other {# strings per language}}",
+      "delete_document": "Remove this file",
+      "save_button": "Save",
+      "cancel_button": "Cancel",
+      "item": {
+        "removed_label": "Removed",
+        "deleting_label": "Deleting {path}.{extension}…",
+        "path_label": "Path",
+        "path_help": "Used to scope your strings. The path will be used to export all your languages (en/<em>path</em>.format, fr/<em>path</em>.format)"
+      }
+    },
+    "error_section": {
+      "logout": "Logout",
+      "or": "or",
+      "return": "return to home"
+    },
+    "operations_peek": {
+      "item": {
+        "overview": "Overview",
+        "details": "Details",
+        "hide": "Hide",
+        "empty_changes": "No changes on this language",
+        "empty_results": "No results for this search",
+        "text_label": "Text:",
+        "previous_label": "Before sync:"
+      }
+    },
+    "project_activity": {
+      "stats_label": "Activities performed:",
+      "overview_label": "Overview:",
+      "review_label": "Was reviewed?",
+      "reviewed_yes": "Yes",
+      "reviewed_no": "No",
+      "last_synced_text_label": "Last synced text:",
+      "text_before_action_label": "Text before the activity:",
+      "new_text_label": "New text:",
+      "empty_value": "Empty text",
+      "text_differences_label": "Differences:",
+      "rollback_operation_label": "Rollbacked by this activity:",
+      "rollbacked_operation_label": "Rollbacked this activity:",
+      "batch_operation_label": "Generated by this activity:",
+      "operations_label": "Generated these activities:",
+      "rollbacked_label": "Rollbacked",
+      "file_label": "File:",
+      "key_label": "Key:",
+      "details_label": "Details:",
+      "explanation_label": "Why did this happen?",
+      "rollback_confirm": "Are you sure you want to rollback this activity? You cannot undo a rollback.",
+      "rollback": "Rollback",
+      "stats_label_text": "Activities performed:",
+      "stats_text": {
+        "merge_on_corrected": "Translated string",
+        "add_to_version": "Versioned strings",
+        "version_new": "Versioned strings",
+        "merge_on_proposed": "Translated string",
+        "merge_on_proposed_force": "Translated (force) string",
+        "merge_on_corrected_force": "Translated (force) string",
+        "conflict_on_proposed": "New conflict",
+        "conflict_on_corrected": "New conflict",
+        "conflict_on_slave": "New conflict reflected in another language",
+        "correct_conflict": "Strings marked as reviewed",
+        "uncorrect_conflict": "Strings marked as not reviewed",
+        "update": "Update string",
+        "new": "New string",
+        "renew": "Renew string",
+        "remove": "Delete string",
+        "merge": "Add translations to files",
+        "sync": "Sync files",
+        "update_proposed": "Update synced text reference"
+      },
+      "action_explanation": {
+        "add_to_version": "When a user creates a version, the string is copied as a versioned string. The string will remain untouched by the \"main\" version",
+        "version_new": "When a user creates a version, the string is copied as a versioned string. The string will remain untouched by the \"main\" version",
+        "create_version": "When a user freeze the state of all strings to tag it with a version. Used to maintain multiple versions of the same app in parallel.",
+        "conflict_on_corrected": "When the uploaded text is different than the last synced text and the last synced text is different than the current text. This happens if the text has been touched by a user in Accent. It is uselful to identify a conflict that is caused by a difference in a sync and the modified version in Accent.",
+        "conflict_on_proposed": "When the uploaded text is different than the last uploaded text and the last synced text is equal to the current text. This happens if the text has not been touched by a user in Accent. It is uselful to identify a conflict that is only caused by a sync and not a human intervention.",
+        "conflict_on_slave": "When the activity \"conflict on proposed\" or \"conflict on corrected\" happens on a string, the matching keys in other languages apply this activity. The goal of this activity is to flag a change of meaning in the main language in the translations. The string will be flagged as \"in review\"",
+        "correct_all": "When all the strings are manually marked as reviewed.",
+        "correct_conflict": "When a string is manually marked as reviewed.",
+        "batch_correct_conflict": "When multiple strings were marked as reviewed in a short lapse of time.",
+        "document_delete": "When a file has been deleted.",
+        "batch_merge": "When strings are updated with new translations from file uploads. This applies the same logic as the sync activity but without removing strings.",
+        "merge": "When strings are updated with new translations from a file upload. This applies the same logic as the sync activity but without removing strings.",
+        "merge_on_corrected": "When the uploaded text is different than the last synced text and the last synced text is different than the current text. This happens if the text has been touched by a user in Accent. It is uselful to identify a conflict that is caused by a difference in the sync upload and the modified version in Accent.",
+        "merge_on_proposed": "When the uploaded text is different than the last synced text and the last synced text is equal to the current text. This happens if the text has not been touched by a user in Accent. It is uselful to identify a conflict that is only caused by the sync upload and not a human intervention.",
+        "merge_on_corrected_force": "When the uploaded text is different than the last synced text and the last synced text is different than the current text. This happens if the text has been touched by a user in Accent. It is uselful to identify a conflict that is caused by a difference in the sync upload and the modified version in Accent.",
+        "merge_on_proposed_force": "When the uploaded text is different than the last synced text and the last synced text is equal to the current text. This happens if the text has not been touched by a user in Accent. It is uselful to identify a conflict that is only caused by the sync upload and not a human intervention.",
+        "remove": "When the synced file does not contain the key.",
+        "new": "When the synced file contains a key that is not present in the file.",
+        "renew": "When the synced file contains a key that was previously removed.",
+        "new_slave": "When a new language is added to the project.",
+        "rollback": "When a user manually rollback an activity.",
+        "sync": "When a document is synced with a file.",
+        "batch_sync": "When documents are synced with files.",
+        "uncorrect_all": "When all the strings are manually put back in review.",
+        "uncorrect_conflict": "When the string is manually put back in review.",
+        "batch_update": "When multiple strings are manually updated by someone.",
+        "update": "When the string is manually updated by someone.",
+        "update_proposed": "When the synced text is the same as the current text but different than the last synced text. The only thing this activity does is make sure that the reference of the last synced text is updated. This does not affect the string’s text."
+      },
+      "action_text": {
+        "add_to_version": "froze the string in a version",
+        "version_new": "added the string to a version",
+        "create_version": "created a new version",
+        "conflict_on_corrected": "’s sync activity created a conflict",
+        "conflict_on_proposed": "’s sync activity created a conflict",
+        "conflict_on_slave": "’s sync activity created a conflict reflected in another language",
+        "correct_conflict": "marked the string as reviewed",
+        "batch_correct_conflict": "marked multiple strings as reviewed",
+        "merge_on_corrected": "’s translations additions modified the string",
+        "merge_on_proposed": "’s translations additions modified the string",
+        "merge_on_corrected_force": "’s translations additions (force) modified the string:",
+        "merge_on_proposed_force": "’s translations additions (force) modified the string:",
+        "new": "added a string",
+        "renew": "re-added a string",
+        "remove": "removed a string",
+        "rollback": "rollbacked an operation",
+        "uncorrect_conflict": "put a string back to review",
+        "update": "updated a string",
+        "batch_update": "updated multiple strings",
+        "update_proposed": "updated an uploaded text reference",
+        "sync": "synced a file: {document}",
+        "batch_sync": "synced files",
+        "new_slave": "added a new language",
+        "uncorrect_all": "put all strings back to review",
+        "correct_all": "marked all strings as reviewed",
+        "document_delete": "deleted a file",
+        "batch_merge": "added translations for files:",
+        "merge": "added translations for a file:"
+      },
+      "label_text": {
+        "conflict_on_corrected": "The text has been moved to review and is now:",
+        "conflict_on_proposed": "The text is still in review and is now:",
+        "conflict_on_slave": "The text has been moved to review and is now:"
+      }
+    },
+    "project_settings": {
+      "back_link": {
+        "title": "← Back to settings"
+      },
+      "links_list": {
+        "collaborators": "Collaborators",
+        "collaborators_text": "Manage who has access to what features of this project",
+        "badges": "Badges",
+        "badges_text": "Quick look on project stats, embedded in images",
+        "api_token": "API Tokens",
+        "api_token_text": "Integrate Accent workflow with the CLI or plain API requests",
+        "service_integrations": "Service & integrations",
+        "service_integrations_text": "Notify and interact with external systems based on Accent events",
+        "manage_languages": "Manage languages",
+        "manage_languages_text": "Add/remove languages translated in the project",
+        "jipt": "Just In Place Translations",
+        "jipt_text": "Live translation on any applications, with built-in JavaScript library",
+        "machine_translations": "Machine translations",
+        "machine_translations_text": "Configure an external service to translate languages automatically",
+        "prompts": "AI Assistant",
+        "prompts_text": "Configure your assistant to help write, improve or correct your strings"
+      },
+      "machine_translations": {
+        "title": "Machine translations",
+        "text": "Add a valid configuration to enable translating directly in the Review page. You can also translate your project’s file as well as arbirtary files that you upload on Accent.",
+        "enabled_actions_sync": "Automatically run on project sync",
+        "use_platform_label": "Use the platform config if available",
+        "config_key_help_present": "Config key has been set, but the value will never be exposed via the API.",
+        "config_key_help_not_present": "Once saved, the config key will never be shown.",
+        "config_key_placeholder": "Paste the config key here…"
+      },
+      "prompts": {
+        "title": "AI Assistant",
+        "help": "Instructions will be available on all string inputs to help you improve your content. The clearer the instructions you give to the assistant, to better the output will be.",
+        "new_button": "Add a new instruction",
+        "use_platform_label": "Use the platform config if available",
+        "config_key_help_present": "Config key has been set, but the value will never be exposed via the API.",
+        "config_key_help_not_present": "Once saved, the config key will never be shown.",
+        "delete_confirm": "Are you sure you want to delete this instruction?"
+      },
+      "delete_form": {
+        "title": "Danger zone",
+        "delete_project_title": "Delete this project",
+        "delete_project_text": "Once you delete a project, there is no going back.",
+        "delete_project_button": "Delete this project",
+        "delete_project_confirm": "Are you sure you want to delete this project? This action cannot be undone."
+      },
+      "form": {
+        "update_button": "Update project",
+        "unsupported_logo_type": "Only SVG files are supported as project logo.",
+        "reset_logo_button": "Reset logo",
+        "lock_file_operations": {
+          "text_1": "When the file operations are locked, syncing and adding translations will be disabled.",
+          "remove_lock_button": "Unlock file operations",
+          "add_lock_button": "Lock file operations"
+        }
+      },
+      "jipt": {
+        "title": "Just In Place Translations",
+        "integration_help": "This steps will walk you throught the setup you need to have in your project to translate your strings in your browser, inside your project.",
+        "demo_help": "See a static HTML page that renders the first string of your project in different context. The Accent live integration can be seen at the bottom of the page. Note that the live example use your real project’s data.",
+        "demo_link": "Open example →",
+        "add_language_title": "Add the pseudo language to your project",
+        "add_language_image_1": "Here is a language like you already have in your project:",
+        "add_language_image_2": "Here is the pseudo language named \"accent\" that act as a normal translation in your project:",
+        "use_language_title": "Use the pseudo language",
+        "pseudo_language_text": "The Accent script parses the DOM for strings that match the Just In Place Translations export. Go in the \"Files\" section to export the file or use the CLI to add the pseudo language to your project.",
+        "use_language_text": "By switching to the Accent language using your favorite framework i18n tool, the page will display the strings in the pseudo language files and the Accent script will replace those by the strings in Accent. It will also bind click event on the elements so that you can select strings directly in your app and edit them via Accent."
+      },
+      "api_token": {
+        "title": "API tokens",
+        "text_1": "With this token, you can make authentified calls to Accent’s API. All tokens have the 'bot' permissions: sync and add translations. You can specifiy custom permissions to have more fine grained tokens across your project. Set the token as <code>ACCENT_API_KEY</code> in your GitHub actions workflows to be authenticated using accent-cli.",
+        "revoke_button": "Revoke",
+        "revoke_confirm": "Are you sure you want to revoke the token? This operation can’t be reverted.",
+        "inserted_at": "Created:",
+        "create_title": "Add a new API token",
+        "create_button": "Create",
+        "create_name_placeholder": "Display name",
+        "create_picture_url_placeholder": "Avatar URL (optional)",
+        "permissions": {
+          "select_all": "Select all",
+          "unselect_all": "Unselect all",
+          "custom_permissions": "Custom permissions",
+          "custom_permissions_arrow": "↓",
+          "use_custom_permissions": "Use custom permissions"
+        }
+      },
+      "user_token": {
+        "title": "Your personal token",
+        "text_1": "You can also use your personal token to make API call as yourself. Beware, this token is global for all your project.",
+        "text_shell": "You can set a global environment variable named <code>ACCENT_API_KEY</code> on your shell (bash, zsh, fish, etc) to be authenticated when you use accent-cli."
+      },
+      "badges": {
+        "title": "Badges",
+        "text": "Can be embedded in markdown files or displayed on a web page to show public stats for a given project.",
+        "percentage_reviewed": "Percentage reviewed",
+        "conflicts": "Conflicts",
+        "translations": "Translations",
+        "reviewed": "Reviewed"
+      },
+      "collaborators": {
+        "admin_text": "Can add languages, update the project and add/remove collaborators.",
+        "developer_text": "Can make file operations: Sync, add translations and preview those operations in the UI.",
+        "owner_text": "With the same roles as the admin, the owners are people who the project belongs to.",
+        "reviewer_text": "Can do every tasks except those listed in the above roles. Review, update strings, comments, etc.",
+        "translator_text": "Translate strings and make updates on documents. The translator is not included in the review process.",
+        "title": "Collaborators"
+      },
+      "collaborators_item": {
+        "by": "by",
+        "cancel_save_role": "Cancel",
+        "delete_button": "Remove collaborator",
+        "edit_role": "Edit role",
+        "joined": "Join the project",
+        "invited": "Invited",
+        "save_role": "Save role",
+        "uninvite_button": "Remove invitation"
+      },
+      "integrations": {
+        "title": "Service & integrations",
+        "help": "Services are pre-built integrations that perform certain actions when events occur on Accent. <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://www.accent.reviews/guides/service-integrations.html\">More info -></a>",
+        "save": "Save",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete",
+        "last_executed_at": "Last executed at:",
+        "data": {
+          "azure_storage_container_sas": "SAS URL",
+          "aws_s3_bucket": "Bucket name",
+          "aws_s3_path_prefix": "Path prefix",
+          "aws_s3_region": "Region",
+          "aws_s3_access_key_id": "Access Key ID",
+          "aws_s3_secret_access_key": "Secret Access Key",
+          "aws_s3_minimum_policy": "Minimum policy",
+          "url": "URL"
+        },
+        "empty_description": {
+          "aws_s3": {
+            "title": "AWS S3",
+            "text": "Upload your files in Amazon Web Services S3 to serve them directly in your application"
+          },
+          "azure_storage_container": {
+            "title": "Azure Storage Container",
+            "text": "Upload your files in Azure Storage Container to serve them directly in your application"
+          },
+          "discord": {
+            "title": "Discord",
+            "text": "Post your project’s notifications in Discord"
+          },
+          "slack": {
+            "title": "Slack",
+            "text": "Post your project’s notifications in Slack"
+          }
+        },
+        "webhook_url_how": "How to obtain a webhook URL?",
+        "events": {
+          "title": "Which events would you like to trigger this webhook?",
+          "options": {
+            "sync": "Sync with any changes",
+            "new_conflicts": "New strings to review",
+            "complete_review": "Project is 100% reviewed",
+            "integration_execute_azure_storage_container": "Files uploaded to Azure Storage Container"
+          }
+        },
+        "execute": {
+          "aws_s3": {
+            "title": "Upload files to AWS S3",
+            "cancel_button": "Cancel",
+            "error": "Error while pushing to your bucket. Check your credentials and try again.",
+            "push_button": "Upload",
+            "bucket": "Bucket",
+            "path_prefix": "Path prefix",
+            "submit_confirm": "Uploading files to AWS S3 can override existing files if you upload for the latest or an already uploaded version tag.",
+            "target_version": {
+              "label": "Target Version",
+              "options": {
+                "latest": "Latest Version",
+                "specific": "Specific Version"
+              }
+            }
+          },
+          "azure_storage_container": {
+            "title": "Upload files to Azure Storage Container",
+            "cancel_button": "Cancel",
+            "error": "Error while pushing to Azure. Check your credentials and try again.",
+            "push_button": "Upload",
+            "sas_base_url": "Base upload URL",
+            "submit_confirm": "Uploading files to Azure Storage Container can override existing files if you upload for the latest or an already uploaded version tag.",
+            "target_version": {
+              "label": "Target Version",
+              "options": {
+                "latest": "Latest Version",
+                "specific": "Specific Version"
+              }
+            }
+          }
+        }
+      }
+    },
+    "project_activities_filter": {
+      "actions": {
+        "conflict_on_corrected": "Conflict on corrected",
+        "conflict_on_proposed": "Conflict on proposed",
+        "conflict_on_slave": "Conflict on translation",
+        "correct_all": "Correct all",
+        "correct_conflict": "Correct conflict",
+        "batch_correct_conflict": "Correct conflicts",
+        "document_delete": "File delete",
+        "new": "New",
+        "renew": "Renew",
+        "new_comment": "New comment",
+        "remove": "Remove",
+        "rollback": "Rollback",
+        "batch_merge": "Add translations to files",
+        "merge": "Add translations to file",
+        "sync": "Sync file",
+        "batch_sync": "Sync files",
+        "uncorrect_all": "Uncorrect all",
+        "uncorrect_conflict": "Uncorrect conflict",
+        "update": "Update string",
+        "batch_update": "Update strings"
+      },
+      "actions_default_option_text": "All activities",
+      "collaborators_default_option_text": "All collaborators",
+      "versions_default_option_text": "All versions",
+      "only_important_activities_text": "Only important activities"
+    },
+    "project_activities_list": {
+      "title": "Activities",
+      "empty_activities_text": "No activities found"
+    },
+    "project_activities_list_item": {
+      "stats_label_text": "Activities performed:",
+      "stats_text": {
+        "add_to_version": "Versioned strings",
+        "version_new": "Versioned strings",
+        "merge_on_corrected": "Translated string",
+        "merge_on_proposed": "Translated string",
+        "merge_on_proposed_force": "Translated (force) string",
+        "merge_on_corrected_force": "Translated (force) string",
+        "conflict_on_proposed": "New conflict",
+        "conflict_on_corrected": "New conflict",
+        "conflict_on_slave": "New conflict reflected in another language",
+        "correct_conflict": "Strings marked as reviewed",
+        "uncorrect_conflict": "Strings marked as not reviewed",
+        "update": "Updated string",
+        "new": "New string",
+        "renew": "Renew string",
+        "remove": "Delete string",
+        "merge": "Add translations to files",
+        "sync": "Sync files",
+        "update_proposed": "Update uploaded text reference"
+      },
+      "action_text": {
+        "add_to_version": "froze the string in a version:",
+        "version_new": "added the string to the version:",
+        "create_version": "created a new version:",
+        "remove": "removed the string:",
+        "renew": "added the previously removed string:",
+        "new": "added the string:",
+        "conflict_on_corrected": "last sync activity created a conflict:",
+        "conflict_on_proposed": "last sync activity created a conflict:",
+        "conflict_on_slave": "last sync activity created a conflict reflected in another language:",
+        "correct_all": "marked all strings as reviewed",
+        "correct_conflict": "marked a string as reviewed:",
+        "batch_correct_conflict": "marked multiple strings as reviewed:",
+        "document_delete": "deleted a file:",
+        "batch_merge": "added translations for files:",
+        "merge": "added translations for a file:",
+        "merge_on_corrected": "last translations additions modified a string:",
+        "merge_on_proposed": "last translations additions modified a string:",
+        "merge_on_corrected_force": "last translations additions (force) modified a string:",
+        "merge_on_proposed_force": "last translations additions (force) modified a string:",
+        "new_comment": "added a new comment:",
+        "new_slave": "added a new language",
+        "rollback": "rollbacked an operation:",
+        "sync": "synced a file:",
+        "batch_sync": "synced files:",
+        "uncorrect_all": "put all strings back to review",
+        "uncorrect_conflict": "put a string back to review:",
+        "update": "updated the string:",
+        "batch_update": "updated multiple strings:",
+        "update_proposed": "updated the uploaded text reference:"
+      },
+      "label_text": {
+        "conflict_on_corrected": "The text has been moved to review and is now:",
+        "conflict_on_proposed": "The text is still in review and is now:",
+        "conflict_on_slave": "The text has been moved to review and is now:"
+      }
+    },
+    "project_comments_list": {
+      "no_comments": "No comments on any strings yet. You can comment on any string to provide context for a translator or to discuss on the content of the string.",
+      "title": "Conversation"
+    },
+    "project_create_form": {
+      "title": "New project",
+      "error": "Invalid project",
+      "cancel_button": "Cancel",
+      "language_label": "Main language:",
+      "language_search_placeholder": "Search…",
+      "name_label": "Name:",
+      "save_button": "Create"
+    },
+    "revision_update_form": {
+      "title": "Edit language",
+      "error": "Invalid language",
+      "cancel_button": "Cancel",
+      "name_label": "Name:",
+      "slug_label": "Slug:",
+      "save_button": "Update"
+    },
+    "version_create_form": {
+      "title": "New version",
+      "text": "Creating a version makes a snapshot of all the active strings (reviewed or not) to be viewable with the certainty that it will remain untouched. This can be useful when maintaining multiple version of the same app.",
+      "error": "Invalid version",
+      "cancel_button": "Cancel",
+      "name_label": "Name:",
+      "copy_on_update_translation_help": "Everytime a translation in this version is updated, the same text will be applied to the latest translation. This will make sure that a fix in frozen version will also be present in the latest version without any required actions by the developer or the reviewer.",
+      "copy_on_update_translation_label": "Copy on update translation",
+      "tag_label": "Tag:",
+      "save_button": "Create"
+    },
+    "version_update_form": {
+      "title": "Update version",
+      "error": "Invalid version",
+      "cancel_button": "Cancel",
+      "copy_on_update_translation_help": "Everytime a translation in this version is updated, the same text will be applied to the latest translation. This will make sure that a fix in frozen version will also be present in the latest version without any required actions by the developer or the reviewer.",
+      "copy_on_update_translation_label": "Copy on update translation",
+      "name_label": "Name:",
+      "tag_label": "Tag:",
+      "save_button": "Update"
+    },
+    "prompt_update_form": {
+      "title": "Update instruction",
+      "error": "Invalid instruction",
+      "cancel_button": "Cancel",
+      "name_label": "Name:",
+      "content_label": "Content:",
+      "save_button": "Update"
+    },
+    "prompt_create_form": {
+      "title": "Create instruction",
+      "error": "Invalid instruction",
+      "cancel_button": "Cancel",
+      "name_label": "Name:",
+      "content_label": "Content:",
+      "save_button": "Create"
+    },
+    "page_title": {
+      "versions": "Versions",
+      "comments": "Conversation",
+      "collaborators": "Collaborators",
+      "manage_languages": "Languages",
+      "files": "Files",
+      "project_edit": "Settings",
+      "activities": "Activities",
+      "lint_translations": "Checks"
+    },
+    "project_file_operations": {
+      "sync": "Sync",
+      "merge": "Add translations",
+      "export": "Export",
+      "export_all": "Export all",
+      "translate": "Translate",
+      "document_format": "Format",
+      "preview_title": "Preview",
+      "preview_text": "You must choose a file, then click on the Preview button.",
+      "export_jipt": "Just In Place Translation"
+    },
+    "project_navigation": {
+      "back_to_projects": "Back to projects",
+      "engage": "Engage",
+      "revise": "Revise",
+      "manage": "Manage",
+      "activities_link_title": "Activities",
+      "conversation_link_title": "Conversation",
+      "collaborators_link_title": "Collaborators",
+      "manage_languages_link_title": "Languages",
+      "translations_link_title": "All strings",
+      "lint_link_title": "Checks",
+      "conflicts_link_title": "Review",
+      "translate_link_title": "Translate",
+      "dashboard_link_title": "Dashboard",
+      "settings_link_title": "Settings",
+      "sync_link_title": "Files",
+      "versions_link_title": "Versions"
+    },
+    "lint_translations_page": {
+      "empty_text": "No checks warnings or errors. You’re all good!"
+    },
+    "project_manage_languages": {
+      "create_error": "Language can not be added right now. Try again later.",
+      "conflicts_explain_title": "On conflicts",
+      "conflicts_explain_text": "All string addition or deletion will be reflected in the language. When a text changes in the main revision, the string in the language will be marked as in review.",
+      "sync_explain_title": "On sync",
+      "sync_explain_text": "The main language will be the default source when syncing a file. The other languages are never \"synced\", they just follow the main language.",
+      "add_translations_explain_title": "On add translations",
+      "add_translations_explain_text": "All languages can have strings \"merged\" into it by adding translations. Conflict resolution will work the same but will never add or remove strings.",
+      "main_text": "You can add a new language that will follow the main language.",
+      "title": "Manage languages"
+    },
+    "projects_filters": {
+      "searching_for": "Searching for:",
+      "input_placeholder_text": "Search for a project",
+      "new_project": "New project"
+    },
+    "recent_projects_list": {
+      "title": "Recent projects:"
+    },
+    "projects_list": {
+      "last_synced_at_label": "Last sync:",
+      "last_activity_at_label": "Last activity:",
+      "never_synced": "Project was never synced",
+      "no_projects": "You have no projects yet",
+      "no_projects_query": "No projects found for: {query}",
+      "maybe_create_one": "Create your first project here →"
+    },
+    "related_translations_list": {
+      "comments_label": "{count, plural, =0 {No comments} =1 {1 comment} other {# comments}}",
+      "conflicted_label": "in review",
+      "master_label": "main",
+      "save_button": "Save",
+      "last_updated_label": "Last updated:",
+      "new_language_link": "New language",
+      "no_related_translations": "No translations yet. You need to add another language to your project."
+    },
+    "removed_translation_edit": {
+      "cant_edit": "This string can’t be edited because it has been removed."
+    },
+    "project_manage_languages_create_form": {
+      "default_null": "Initialize language with empty strings",
+      "machine_translations_enabled": "Initialize language with machine translations",
+      "language_search_placeholder": "Search…",
+      "save_button": "Add language"
+    },
+    "project_manage_languages_overview": {
+      "list_languages": "Languages:",
+      "revision_inserted_at_label": "Created",
+      "revision_deleted_label": "The language is currently being removed from your project. It will automatically disappear once all operations are propagated in the system.",
+      "master_badge": "main",
+      "delete_revision_confirm": "Are you sure you want to remove this language from your project? This action cannot be rollbacked.",
+      "delete_revision_button": "Remove this language",
+      "promote_revision_master_confirm": "Are you sure you want to use this language as the main language from your project?",
+      "promote_revision_master_button": "Use as main"
+    },
+    "revision_export_options": {
+      "default_format": "Default format",
+      "default_version": "Latest version",
+      "orders": {
+        "az": "Alphabetical order",
+        "original": "Original order"
+      },
+      "advanced_filters_title": "Translation filters",
+      "advanced_filters": {
+        "empty": "Text is empty (\"\" or null value)",
+        "added_last_sync": "Strings added last sync",
+        "conflicted": "In review"
+      },
+      "save_button": "Export"
+    },
+    "revision_navigation": {
+      "documents_link_title": "Files",
+      "merge_link_title": "Add translations",
+      "review_link_title": "Review",
+      "translations_link_title": "All strings"
+    },
+    "time_ago_in_words_tag": {
+      "formatted_date_time_format": "yyyy-MM-dd'T'HH:mm:ss",
+      "humanized_date_title_format": "EEEE, MMMM do yyyy, H:mm a"
+    },
+    "translation_activities_list_item": {
+      "action_text": {
+        "add_to_version": "froze the string in a version:",
+        "version_new": "added the string to the version:",
+        "create_version": "created a new version",
+        "conflict_on_corrected": "last sync activity created a conflict",
+        "conflict_on_proposed": "last sync activity created a conflict",
+        "conflict_on_slave": "last sync activity created a conflict reflected in another language",
+        "correct_conflict": "marked the string as reviewed",
+        "merge_on_corrected": "last translations additions modified the string",
+        "merge_on_proposed": "last translations additions modified the string",
+        "merge_on_corrected_force": "last translations additions (force) modified the string:",
+        "merge_on_proposed_force": "last translations additions (force) modified the string:",
+        "new": "added the string",
+        "renew": "re-added the string",
+        "new_comment": "added a new comment:",
+        "remove": "removed the string",
+        "rollback": "rollbacked an operation",
+        "uncorrect_conflict": "put the string back to review",
+        "update": "updated the text",
+        "update_proposed": "updated the uploaded text reference"
+      },
+      "label_text": {
+        "conflict_on_corrected": "The text has been moved to review and is now:",
+        "conflict_on_proposed": "The text is still in review and is now:",
+        "conflict_on_slave": "The text has been moved to review and is now:"
+      }
+    },
+    "translation_comment_delete": {
+      "delete": "Delete",
+      "delete_comment_confirm": "Are you sure you want to delete this comment? This action cannot be undone."
+    },
+    "translation_comment_form": {
+      "comment_button": "Comment",
+      "comment_placeholder": "Leave a comment…",
+      "submit_error": "Your comment submission was not successful, try again later."
+    },
+    "translation_comments_list": {
+      "no_comments": "No comments"
+    },
+    "translation_edit": {
+      "source_translation": "See latest version of the string",
+      "correct_button": "Update and mark as reviewed",
+      "previous_text": "Previous text:",
+      "uncorrect_button": "Put back to review",
+      "uneditable": "The text is not editable because it has been marked as reviewed",
+      "update_text": "Update text",
+      "form": {
+        "true_option": "true",
+        "false_option": "false",
+        "boolean_type_notice": "The text should be either true or false",
+        "integer_type_notice": "The text has been set with an integer value.",
+        "float_type_notice": "The text has been set with a float value.",
+        "empty_type_notice": "The text has been set to an empty string",
+        "empty_type_placeholder": "Empty text",
+        "null_type_notice": "The text has been set to null",
+        "file_comment": {
+          "title": "File comment"
+        },
+        "placeholders": {
+          "title": "Placeholders",
+          "text": "These custom expressions mark special strings that will be replaced by dynamic values. You do not have to review or translate them."
+        }
+      },
+      "lint_message": {
+        "arrow": "→",
+        "replace": "Replace",
+        "title_checks": {
+          "all": "All",
+          "PLACEHOLDER_COUNT": "Placeholders count",
+          "TRAILING_SPACE": "Trailing space",
+          "LEADING_SPACES": "Leading spaces",
+          "DOUBLE_SPACES": "Double spaces",
+          "APOSTROPHE_AS_SINGLE_QUOTE": "Single quote to apostrophe",
+          "FIRST_LETTER_CASE": "First letter mismatch",
+          "THREE_DOTS_ELLIPSIS": "Three dots to ellipsis",
+          "SAME_TRAILING_CHARACTER": "Trailing character mismatch",
+          "SPELLING": "Spelling",
+          "URL_COUNT": "URLs count"
+        },
+        "checks": {
+          "PLACEHOLDER_COUNT": "Number of placeholders does not match the main string",
+          "TRAILING_SPACE": "String contains a trailing space",
+          "LEADING_SPACES": "String contains leading spaces",
+          "DOUBLE_SPACES": "String contains double spaces",
+          "APOSTROPHE_AS_SINGLE_QUOTE": "A single quote as been used instead of an apostrophe",
+          "SPELLING": "String contains a spelling mistake",
+          "FIRST_LETTER_CASE": "First letter of translation does not match case of the main’s",
+          "THREE_DOTS_ELLIPSIS": "String contains three dots instead of ellipsis",
+          "SAME_TRAILING_CHARACTER": "String does not match the trailing character of main",
+          "URL_COUNT": "Number of URL does not match the main string"
+        }
+      }
+    },
+    "translation_navigation": {
+      "editions_link_title": "Editions",
+      "activities_link_title": "Activities",
+      "comments_link_title": "{count, plural, =0 {Conversation} other {Conversation (#)}}",
+      "edit_link_title": "Edit",
+      "merge_link_title": "Add translations",
+      "related_translations_link_title": "Translations"
+    },
+    "translation_splash_title": {
+      "plural_label": "plural",
+      "conflicted_label": "in review",
+      "master_label": "main",
+      "last_updated_label": "Last updated:",
+      "removed_label": "This string was removed {removedAt}"
+    },
+    "translations_filter": {
+      "advanced_filters_button": "Advanced filters",
+      "input_placeholder_text": "Search for a string",
+      "documents_label": "Filter from document:",
+      "document_default_option_text": "All documents",
+      "version_default_option_text": "Latest version",
+      "total_entries_count": "{count, plural, =0 {No strings found} =1 {1 string found} other {# strings found}}",
+      "advanced_filters_title": "Advanced filters",
+      "advanced_filters": {
+        "empty": "Text is empty (\"\" or null value)",
+        "not_empty": "Text is not empty",
+        "added_last_sync": "Strings added last sync",
+        "commented_on": "Strings with comments",
+        "conflicted": "In review",
+        "translated": "To translate"
+      }
+    },
+    "translation_editions_list": {
+      "no_translations": "Looks like no versions strings were added for your project.",
+      "no_versions": "Try to",
+      "no_versions_link": "create a new version →"
+    },
+    "translations_list": {
+      "latest_version_label": "Latest",
+      "translations_version_notice": "You are viewing strings for the version",
+      "comments_count": "{count, plural, =0 {No comments} =1 {1 comment} other {# comments}}",
+      "save": "Save",
+      "empty_text": "Empty text",
+      "null_text": "Null text",
+      "in_review_label": "in review",
+      "to_translate_label": "to translate",
+      "in_review_tooltip": "View in review",
+      "to_translate_tooltip": "Translation was never touched",
+      "lint_messages_label": "{count, plural, =0 {No linting warnings} =1 {1 linting warning} other {# linting warnings}}",
+      "last_updated_label": "Last updated:",
+      "maybe_sync_before": "Maybe try to",
+      "maybe_sync_link": "sync some files →",
+      "no_translations": "Looks like no strings were added for your project.",
+      "no_translations_query": "No strings found for: {query}",
+      "no_translations_filters": "No strings found for the given filters"
+    },
+    "welcome_project": {
+      "welcome": "Welcome!",
+      "welcome_translations": "Bienvenue Bienvenido 환영 欢迎 тавтай морилно уу Welkom Tervetuloa",
+      "first_step": "First steps",
+      "after_steps": "After this, you will be able to",
+      "sync_file": "Sync a new file",
+      "sync_file_text": "Add strings from multiple file formats to review them",
+      "manage_languages": "Add languages",
+      "manage_languages_text": "Target languages follow your main language strings and conflicts",
+      "add_collaborator": "Add collaborator",
+      "add_collaborator_text": "Translators, developers, etc.",
+      "api_token": "Get an API Token",
+      "api_token_text": "Interact with the API from your project",
+      "start_review": "Start to review and translate",
+      "export": "Export the corrected file",
+      "help": "Help?"
+    }
+  },
+  "general": {
+    "application_name": "Accent",
+    "company_name": "Mirego",
+    "logout_button": "Logout",
+    "roles": {
+      "ADMIN": "Admin",
+      "DEVELOPER": "Developer",
+      "OWNER": "Owner",
+      "BOT": "API Token",
+      "REVIEWER": "Reviewer",
+      "TRANSLATOR": "Translator"
+    },
+    "machine_translations_providers": {
+      "google_translate": "Google Translate",
+      "deepl": "DeepL"
+    },
+    "prompts_providers": {
+      "openai": "OpenAI"
+    },
+    "integration_services": {
+      "DISCORD": "Discord",
+      "SLACK": "Slack",
+      "AZURE_STORAGE_CONTAINER": "Azure Storage Container",
+      "AWS_S3": "AWS S3"
+    },
+    "search_input_placeholder_text": "Search for a string…"
+  },
+  "pods": {
+    "login": {
+      "title": "Login or signup"
+    },
+    "error": {
+      "not_found": {
+        "status": "404",
+        "title": "Not found",
+        "text": "This page doesn’t exist."
+      },
+      "unauthorized": {
+        "status": "401",
+        "title": "Unauthorized",
+        "text": "You are not authorized to view this resource."
+      },
+      "internal_error": {
+        "status": "500",
+        "title": "Internal server error",
+        "text": "Something bad happened and someone has been notified."
+      }
+    },
+    "document": {
+      "sync": {
+        "flash_messages": {
+          "create_error": "The document could not be synced with the uploaded file",
+          "create_success": "The document has been synced with success"
+        }
+      },
+      "machine_translations": {
+        "flash_messages": {
+          "translate_error": "The document could not be translated with the uploaded file. Verify that the format and the target language are valid."
+        }
+      },
+      "merge": {
+        "flash_messages": {
+          "create_error": "The document could not be uploaded with the uploaded file",
+          "create_success": "The document has been uploaded with success"
+        }
+      },
+      "index": {
+        "flash_messages": {
+          "update_error": "The document could not be updated",
+          "update_success": "The document has been updated with success",
+          "delete_error": "The document could not be removed from the project",
+          "delete_success": "The document has been removed from the project with success"
+        }
+      }
+    },
+    "new_project": {
+      "title": "Create a new project"
+    },
+    "project": {
+      "loading_content": "Loading your project…",
+      "index": {
+        "loading_content": "Fetching dashboard…",
+        "flash_messages": {
+          "revision_correct_success": "All strings in the language have been marked as reviewed",
+          "revision_correct_error": "An error has occurred when marking all the strings in that language as reviewed",
+          "revision_uncorrect_success": "All strings in the language have been marked to be reviewed",
+          "revision_uncorrect_error": "An error has occurred when marking all the strings in that language to be reviewed"
+        }
+      },
+      "activities": {
+        "show": {
+          "loading_activities": "Fetching activities…",
+          "loading_content": "Fetching activity’s details…"
+        },
+        "flash_messages": {
+          "rollback_success": "The activity has been rollbacked with success",
+          "rollback_error": "The activity could not be rollbacked"
+        }
+      },
+      "translations": {
+        "loading_content": "Searching the strings…"
+      },
+      "conflicts": {
+        "loading_content": "Searching the strings in review…",
+        "flash_messages": {
+          "revision_correct_success": "All strings in the language have been marked as reviewed",
+          "revision_correct_error": "An error has occurred when marking all the strings in that language as reviewed",
+          "translate_provider_error": "The string could not be translated by: {provider}",
+          "translate_error": {
+            "unsupported_target": "The string could not be translated: Unsupported target {target}",
+            "unsupported_source": "The string could not be translated: Unsupported source {source}",
+            "unsupported_source_and_target": "The string could not be translated: Unsupported source {source} and target {target}"
+          },
+          "correct_error": "The string could not be marked as reviewed",
+          "correct_success": "The string as been marked as reviewed with success",
+          "update_error": "The string could not be updated",
+          "update_success": "The string has been updated with success"
+        }
+      },
+      "edit": {
+        "title": "Settings",
+        "loading_content": "Fetching project’s settings…",
+        "flash_messages": {
+          "collaborator_add_error": "The collaborator could not be added",
+          "collaborator_add_success": "The collaborator has been added with success",
+          "collaborator_remove_error": "The collaborator could not be removed",
+          "collaborator_remove_success": "The collaborator has been removed with success",
+          "collaborator_update_error": "The collaborator could not be updated",
+          "collaborator_update_success": "The collaborator has been updated with success",
+          "integration_add_error": "The integration could not be added",
+          "integration_add_success": "The integration has been added with success",
+          "integration_execute_error": "The integration could not be executed",
+          "integration_execute_success": "The integration has been executed with success",
+          "integration_update_error": "The integration could not be updated",
+          "integration_update_success": "The integration has been updated with success",
+          "integration_remove_error": "The integration could not be removed",
+          "integration_remove_success": "The integration has been removed with success",
+          "machine_translations_config_error": "The machine translations config could not be saved",
+          "machine_translations_config_success": "The machine translations config has been saved with success",
+          "machine_translations_config_remove_error": "The machine translations config could not be removed",
+          "machine_translations_config_remove_success": "The machine translations config has been removed with success",
+          "prompts_update_success": "Instruction has been updated with success",
+          "prompts_update_error": "Instruction could not be updated",
+          "prompts_create_success": "Instruction has been created with success",
+          "prompts_create_error": "Instruction could not be created",
+          "prompts_remove_success": "Instruction has been deleted with success",
+          "prompts_remove_error": "Instruction could not be deleted",
+          "prompts_config_error": "The AI assistant config could not be saved",
+          "prompts_config_success": "The AI assistant config has been saved with success",
+          "prompts_config_remove_error": "The AI assistant config could not be removed",
+          "prompts_config_remove_success": "The AI assistant config has been removed with success",
+          "update_error": "The project could not be updated",
+          "update_success": "The project has been updated with success",
+          "delete_error": "The project could not be deleted",
+          "delete_success": "The project has been deleted with success"
+        },
+        "badges": {
+          "loading_content": "Fetching project’s badges…"
+        },
+        "api_token": {
+          "loading_content": "Fetching project’s API settings…",
+          "flash_messages": {
+            "api_token_add_success": "API token has been created with success",
+            "api_token_add_error": "API token could not be created",
+            "api_token_revoke_success": "API token has been revoked with success",
+            "api_token_revoke_error": "API token could not be revoked"
+          }
+        },
+        "jipt": {
+          "loading_content": "Fetching project’s Just In Place Translations settings…"
+        },
+        "machine_translations": {
+          "loading_content": "Fetching project’s machine translations settings…"
+        },
+        "prompts": {
+          "loading_content": "Fetching project’s AI assistant settings…"
+        },
+        "service_integrations": {
+          "loading_content": "Fetching project’s service & integrations…"
+        }
+      },
+      "collaborators": {
+        "loading_content": "Fetching project’s collaborators…"
+      },
+      "export": {
+        "loading_content": "Rendering the language export"
+      },
+      "files": {
+        "loading_content": "Fetching files…",
+        "title": "Files"
+      },
+      "versions": {
+        "loading_content": "Fetching versions…",
+        "title": "Versions",
+        "export": {
+          "empty_documents": "No documents were found for this version"
+        }
+      },
+      "manage_languages": {
+        "loading_content": "Fetching languages…",
+        "flash_messages": {
+          "add_revision_failure": "The new language could not be created",
+          "add_revision_success": "The new language has been created with success",
+          "delete_revision_failure": "The language could not be deleted",
+          "delete_revision_success": "The language has been deleted with success",
+          "promote_master_revision_failure": "The language could not be promoted as main",
+          "promote_master_revision_success": "The language has been promoted as main with success"
+        }
+      },
+      "comments": {
+        "flash_messages": {
+          "delete_error": "The comment could not be deleted",
+          "delete_success": "The comment has been deleted with success"
+        }
+      },
+      "lint_translations": {
+        "loading_content": "Linting translations…",
+        "header_link": "See all linting rules →"
+      }
+    },
+    "projects": {
+      "loading_content": "Fetching your projects…"
+    },
+    "versions": {
+      "new": {
+        "flash_messages": {
+          "create_error": "The version could not be created",
+          "create_success": "The version has been created with success"
+        }
+      },
+      "edit": {
+        "flash_messages": {
+          "update_error": "The version could not be updated",
+          "update_success": "The version has been updated with success"
+        }
+      }
+    },
+    "translation": {
+      "edit": {
+        "flash_messages": {
+          "correct_error": "The string could not be marked as reviewed",
+          "correct_success": "The string as been marked as reviewed with success",
+          "uncorrect_error": "The string could not be put back to review",
+          "uncorrect_success": "The string was put back to review with success",
+          "update_error": "The string could not be updated",
+          "update_success": "The string has been updated with success"
+        }
+      },
+      "comments": {
+        "loading_content": "Fetching comments…",
+        "flash_messages": {
+          "delete_error": "The comment could not be deleted",
+          "delete_success": "The comment has been deleted with success"
+        }
+      }
+    }
+  }
+}
