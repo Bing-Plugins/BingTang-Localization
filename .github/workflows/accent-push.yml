@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Replace secret in accent.json
+        run: perl -pi -e 's/\${{ ACCENT_APIKEY }}/$ENV{ACCENT_APIKEY}/' accent.json
+        env:
+          ACCENT_APIKEY: ${{ secrets.ACCENT_APIKEY }}
       - uses: actions/setup-node@v3
         with:
           node-version: 16
