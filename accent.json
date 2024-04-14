@@ -1,6 +1,6 @@
 {
   "apiUrl": "https://translate.yistars.net/",
-  "apiKey": "${{ env.accent.ACCENT_APIKEY }}",
+  "apiKey": "${{ env.ACCENT_APIKEY }}",
   "files": [
     {
       "namePattern": "parentDirectory",
