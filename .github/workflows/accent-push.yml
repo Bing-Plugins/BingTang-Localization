@@ -11,9 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Replace secret in accent.json
-        run: perl -pi -e 's/%ACCENT_APIKEY%/$ENV{ACCENT_APIKEY}/' accent.json
-        env:
-          ACCENT_APIKEY: ${{ secrets.ACCENT_APIKEY }}
+        run: sed -i 's/%ACCENT_APIKEY%/${{ secrets.ACCENT_APIKET }}/g' accent.json
       - uses: actions/setup-node@v3
         with:
           node-version: 16
